@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.profile-header {
+    background: linear-gradient(135deg, #7c4eff, #5b39c2);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.avatar {
+    background-color: #ffffff55;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 20px;
+    padding: 10px 0;
+    
+}
+
+.stats p {
+    color: #7c4eff;
+}
+
+.stats span {
+    color: #333;
+}
+
+.stat {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.main {
+    padding: 20px 0;
+}
+
+.section {
+    background-color: white;
+    margin: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h3 {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+}
+
+.section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.section ul li {
+    border-bottom: 1px solid #eee;
+}
+
+.section ul li:last-child {
+    border-bottom: none;
+}
+
+.section ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.section ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+.logout {
+    text-align: center;
+    margin: 20px;
+}
+
+.logout a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .profile-info {
+        flex-direction: column;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .stats .stat {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .stats .stat:last-child {
+        border-bottom: none;
+    }
+}

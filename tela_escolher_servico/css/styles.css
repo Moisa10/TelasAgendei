@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F9FAFB;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: linear-gradient(135deg, #7c4eff, #5b39c2);
+    color: white;
+}
+
+.back-button,
+.calendar-icon {
+    font-size: 1.5rem;
+}
+
+.store-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.store-logo {
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.service-tabs {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-tabs button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.service-tabs button.active,
+.service-tabs button:hover {
+    color: #7c4eff;
+}
+
+main {
+    padding: 20px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-description h4 {
+    margin: 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #7c4eff;
+}
+
+.continue-button {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #7c4eff;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.continue-button:hover {
+    background-color: #5b39c2;
+}
+
+@media (max-width: 768px) {
+    .store-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f3fb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    max-width: 600px;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #7c4eff;
+    margin-bottom: 20px;
+}
+
+.agendamento {
+    background: linear-gradient(to bottom, #fff, #f9f9f9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.agendamento:hover {
+    transform: scale(1.03);
+}
+
+.status {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info {
+    flex: 2;
+    text-align: left;
+}
+
+.profissional {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.icon {
+    background-color: black;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.data {
+    flex: 1;
+    text-align: right;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.data span {
+    font-size: 1rem;
+    color: #7c4eff;
+}
+
+.acoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+}
+
+button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.reservar {
+    background-color: #7c4eff;
+    color: #fff;
+}
+
+.cancelar {
+    background-color: #ff4c4c;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .acoes {
+        flex-direction: column;
+    }
+}

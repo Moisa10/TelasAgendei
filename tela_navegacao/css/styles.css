@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    color: #7c4eff;
+}
+
+.header input {
+    flex: 1;
+    margin: 0 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.notification {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.profile {
+    background-color: #7c4eff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.categories button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s;
+}
+
+
+.categories button.active {
+    color: #7c4eff; 
+}
+
+.categories button.active:hover {
+    color: #fff;
+    background-color: #7c4eff;
+}
+
+
+
+.main {
+    padding: 20px;
+}
+
+.highlight {
+    margin: 0 20px;
+}
+
+.highlight h2 {
+    margin-bottom: 20px;
+}
+
+.highlight-item {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-banner {
+    flex: 1;
+    background: linear-gradient(135deg, #7c4eff, #5b39c2);
+    border-radius: 10px 0 0 10px;
+    min-height: 100px;
+}
+
+.highlight-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.highlight-info h3 {
+    margin: 0;
+}
+
+.highlight-info p {
+    margin: 5px 0;
+}
+
+.status {
+    color: green;
+}
+
+.rating {
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #7c4eff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5b39c2;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .highlight-item {
+        flex-direction: column;
+    }
+
+    .highlight-banner,
+    .highlight-info {
+        border-radius: 10px;
+    }
+}

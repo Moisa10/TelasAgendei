@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Horário</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="back-button">&#8592;</div>
+        <h1>Agendar Horário</h1>
+    </header>
+
+    <section class="professional-info">
+        <div class="professional-avatar">📷</div>
+        <div>
+            <h2>Ricardo Almeida</h2>
+            <p>&#9733; 4.8 · Cabeleireiro · Salão Beleza Total</p>
+            <p>Corte Masculino - R$ 45,00 · 30 min</p>
+        </div>
+    </section>
+
+    <div class="date-selection">
+        <h3>Selecione uma data</h3>
+        <div class="dates">
+            <div class="date" onclick="showTimes()">QUI, 8 <br> de <span>Hoje</span></div>
+            <div class="date" onclick="showTimes()">SEX, 9 <br> de</div>
+            <div class="date" onclick="showTimes()">SÁB, 10 <br> de</div>
+            <div class="date" onclick="showTimes()">DOM, 11 <br> de</div>
+            <div class="date" onclick="showTimes()">SEG, 12 <br> de</div>
+            <div class="date" onclick="showTimes()">TER, 13 <br> de</div>
+            <div class="date" onclick="showTimes()">QUA, 14 <br> de</div>
+        </div>
+    </div>
+
+    <div class="available-hours hidden" id="available-hours">
+        <h3>Horários disponíveis</h3>
+        <div class="times">
+            <div class="time-slot">08:00</div>
+            <div class="time-slot">08:30</div>
+            <div class="time-slot">09:00</div>
+            <div class="time-slot">09:30</div>
+            <div class="time-slot">10:00</div>
+            <div class="time-slot">10:30</div>
+            <div class="time-slot">11:00</div>
+            <div class="time-slot">11:30</div>
+            <div class="time-slot selected">12:00</div>
+            <div class="time-slot">12:30</div>
+            <div class="time-slot">13:00</div>
+            <div class="time-slot">13:30</div>
+            <div class="time-slot">14:00</div>
+            <div class="time-slot">14:30</div>
+            <div class="time-slot">15:00</div>
+            <div class="time-slot">15:30</div>
+            <div class="time-slot">16:00</div>
+            <div class="time-slot">16:30</div>
+            <div class="time-slot">17:00</div>
+            <div class="time-slot">17:30</div>
+        </div>
+    </div>
+
+    <div class="summary">
+        <h3>Resumo</h3>
+        <p>Serviço: Corte Masculino</p>
+        <p>Profissional: Ricardo Almeida</p>
+        <p>Data: Quinta-feira, 8 de maio</p>
+        <p>Horário: <span id="selected-time">12:00</span></p>
+        <p class="total">Valor total: <span>R$ 45,00</span></p>
+    </div>
+
+    <button class="confirm-button">Confirmar Agendamento</button>
+
+    <script src="/tela_agendar_horario/js/scripts.js"></script>
+</body>
+</html>
