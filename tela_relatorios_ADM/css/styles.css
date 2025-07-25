@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.report-header {
+    background: linear-gradient(135deg, #7c4eff, #5b39c2);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.tabs button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tabs .active,
+.tabs button:hover {
+    background-color: white;
+    color: #7c4eff;
+    border-radius: 5px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.summary-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    min-width: 120px;
+    max-width: 200px;
+}
+
+.change {
+    color: #7c4eff;
+    font-size: 0.9rem;
+}
+
+.total {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.details {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.service .info,
+.service .price {
+    width: 100%;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #7c4eff;
+    height: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .service {
+        width: 100%;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+}

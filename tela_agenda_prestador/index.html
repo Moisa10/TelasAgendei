@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Agenda</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Minha Agenda</h1>
+    </header>
+
+    <main>
+        <section class="calendar">
+            <h2>Maio 2025</h2>
+            <div class="calendar-grid">
+                <div class="days">
+                    <span>D</span><span>S</span><span>T</span>
+                    <span>Q</span><span>Q</span><span>S</span><span>S</span>
+                </div>
+                <div class="dates" id="dates">
+                    <!-- Datas geradas dinamicamente pelo JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="agenda-details" id="agenda-details">
+            <h3 id="selected-date">Selecione uma data</h3>
+            <p id="appointment-count">0 agendamentos</p>
+            <div id="appointments">
+                <!-- Lista de agendamentos será exibida aqui -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

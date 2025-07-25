@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Serviços</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="back-button">&#8592;</div>
+            <h1>Cadastro de Serviços</h1>
+            <div class="help-icon">?</div>
+        </header>
+
+        <main>
+            <section class="form-container">
+                <h2>Novo Serviço</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="service-name">Nome do serviço</label>
+                        <input type="text" id="service-name" placeholder="Ex: Corte Masculino" maxlength="50">
+                        <span class="char-count">0/50</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service-description">Descrição (opcional)</label>
+                        <textarea id="service-description" placeholder="Ex: Corte tradicional com tesoura e máquina" maxlength="200"></textarea>
+                        <span class="char-count">0/200</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Categoria</label>
+                        <div class="categories">
+                            <span class="category selected">Cortes</span>
+                            <span class="category">Barbas</span>
+                            <span class="category">Tratamentos</span>
+                            <span class="category">Combos</span>
+                            <span class="category add-new">+ Nova</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price">Preço (R$)</label>
+                        <input type="text" id="price" placeholder="R$ 0,00">
+                    
+                        <label for="duration">Duração (min)</label>
+                        <input type="number" id="duration" placeholder="30">
+                    </div>
+
+                    <div class="form-group toggle">
+                        <label>Serviço ativo</label>
+                        <span>Disponível para agendamento</span>
+                        <input type="checkbox" id="service-active" checked>
+                        <label for="service-active" class="toggle-switch"></label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="reset" class="cancel-button">Cancelar</button>
+                        <button type="submit" class="save-button">Salvar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
