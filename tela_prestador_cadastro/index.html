@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar Conta</title>
+    <title>Cadastro Prestador</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <img src="/img/AgendeiHorizontal.png" alt="Agendei">
-            <!-- <h1>Agend<span class="laranja">ei</span></h1> -->
+            <img src="/img/AgendeiHorizontal.png" alt="Agendei" class="logo-img">
         </div>
         <nav>
             <a href="#">Já tem conta? <span class="login-link">Fazer login</span></a>
@@ -19,49 +18,62 @@
 
     <main class="container">
         <section class="form-section">
-            <h2>Criar Conta</h2>
-            <p>Preencha seus dados para começar a agendar</p>
+            <div class="form-header">
+                <h2>Cadastro de Prestador</h2>
+            </div>
+            <h3>Ofereça seus Serviços</h3>
+            <p>Preencha seus dados para começar a receber agendamentos</p>
             <form>
                 <div class="form-group">
-                    <label for="full-name">Nome Completo <span class="vermelho">*</span></label>
+                    <label for="full-name">Nome Completo *</label>
                     <input type="text" id="full-name" placeholder="Digite seu nome completo" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">E-mail <span class="vermelho">*</span></label>
+                    <label for="email">E-mail *</label>
                     <input type="email" id="email" placeholder="seu@email.com" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="phone">Celular <span class="vermelho">*</span></label>
+                    <label for="phone">Celular *</label>
                     <input type="tel" id="phone" placeholder="(11) 99999-9999" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="cep">CEP <span class="vermelho">*</span></label>
+                    <label for="cep">CEP *</label>
                     <div class="cep-container">
                         <input type="text" id="cep" placeholder="00000-000" required>
-                        <button type="button" class="cep-button purple">Buscar</button>
+                        <button type="button" class="cep-button">Buscar</button>
                     </div>
                 </div>
-                
+
                 <div class="form-group">
-                    <label for="street">Rua <span class="vermelho">*</span></label>
+                    <label for="street">Rua *</label>
                     <input type="text" id="street" placeholder="Nome da rua" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="neighborhood">Bairro <span class="vermelho">*</span></label>
+                    <label for="number">Número *</label>
+                    <input type="text" id="number" placeholder="Número" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="complement">Complemento</label>
+                    <input type="text" id="complement" placeholder="Apto, sala, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="neighborhood">Bairro *</label>
                     <input type="text" id="neighborhood" placeholder="Nome do bairro" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="city">Cidade <span class="vermelho">*</span></label>
+                    <label for="city">Cidade *</label>
                     <input type="text" id="city" placeholder="Nome da cidade" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="state">Estado <span class="vermelho">*</span></label>
+                    <label for="state">Estado *</label>
                     <select id="state" required>
                         <option value="">Selecione o estado</option>
                         <option value="AC">AC</option>
@@ -96,14 +108,23 @@
 
                 <div class="form-group checkbox">
                     <input type="checkbox" id="terms" required>
-                    <label for="terms">Eu concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a></label>
+                    <label for="terms">Eu concordo com os <a href="#">Termos de Uso</a>, <a href="#">Política de Privacidade</a> e <a href="#">Termos para Prestadores</a></label>
                 </div>
 
                 <div class="form-actions">
-                    <button type="reset" class="btnMudar">Cancelar</button>
-                    <button type="submit" class="btn primary">Criar Conta</button>
+                    <button type="reset" class="btn">Cancelar</button>
+                    <button type="submit" class="btn primary">Criar Conta de Prestador</button>
                 </div>
             </form>
+        </section>
+
+        <section class="benefits">
+            <h3>Por que ser um prestador Agendei?</h3>
+            <ul>
+                <li>Mais Clientes<br><span>Alcance novos clientes e aumente sua receita</span></li>
+                <li>Custo Simples<br><span>Organize seus horários e agendamentos de forma eficaz</span></li>
+                <li>Pagamento Seguro<br><span>Receba seus pagamentos de forma rápida e segura</span></li>
+            </ul>
         </section>
     </main>
 </body>
