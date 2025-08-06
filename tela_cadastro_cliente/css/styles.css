@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    max-width: 570px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    /* background: linear-gradient(135deg, #7c4eff, #5b39c2); */
+    color: #666;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.header h1{
+    color: #7c4eff;
+}
+
+.laranja {
+    color: #ff9100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #666;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.login-link {
+    color:  #5b39c2;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-section {
+    text-align: center;
+}
+
+.form-section h2 {
+    margin-bottom: 10px;
+}
+
+.form-section p {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.cep-container {
+    display: flex;
+}
+
+.cep-button {
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: #7c4eff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.form-group.checkbox label {
+    margin: 0;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: white;
+    width: 200px;
+    height: 45px;
+}
+
+.btnMudar {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: white;
+    width: 200px;
+    height: 45px;
+}
+
+.primary {
+    background-color: #7c4eff;
+    color: white;
+}
+
+.btnMudar:hover {
+    opacity: 0.8;
+    background-color: #e3dede;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.vermelho {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+}

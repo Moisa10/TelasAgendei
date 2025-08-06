@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/img/logoAgendei.jpg" alt="Agendei">
+            <h1>Agend<span class="laranja">ei</span></h1>
+        </div>
+        <nav>
+            <a href="#">Já tem conta? <span class="login-link">Fazer login</span></a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Criar Conta</h2>
+            <p>Preencha seus dados para começar a agendar</p>
+            <form>
+                <div class="form-group">
+                    <label for="full-name">Nome Completo <span class="vermelho">*</span></label>
+                    <input type="text" id="full-name" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail <span class="vermelho">*</span></label>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Celular <span class="vermelho">*</span></label>
+                    <input type="tel" id="phone" placeholder="(11) 99999-9999" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cep">CEP <span class="vermelho">*</span></label>
+                    <div class="cep-container">
+                        <input type="text" id="cep" placeholder="00000-000" required>
+                        <button type="button" class="cep-button purple">Buscar</button>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="street">Rua <span class="vermelho">*</span></label>
+                    <input type="text" id="street" placeholder="Nome da rua" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="neighborhood">Bairro <span class="vermelho">*</span></label>
+                    <input type="text" id="neighborhood" placeholder="Nome do bairro" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Cidade <span class="vermelho">*</span></label>
+                    <input type="text" id="city" placeholder="Nome da cidade" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="state">Estado <span class="vermelho">*</span></label>
+                    <select id="state" required>
+                        <option value="">Selecione o estado</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Eu concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a></label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset" class="btnMudar">Cancelar</button>
+                    <button type="submit" class="btn primary">Criar Conta</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

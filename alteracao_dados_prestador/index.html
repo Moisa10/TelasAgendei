@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Dados</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Meus Dados</h1>
+        <button class="back-button">&#8592;</button>
+    </header>
+
+    <main class="container">
+        <section class="profile-section">
+            <div class="profile-picture">RS</div>
+            <form>
+                <div class="form-group">
+                    <label for="full-name">Nome completo</label>
+                    <input type="text" id="full-name" placeholder="Ricardo Silva">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" placeholder="(xx) xxxxx-xxxx">
+                </div>
+
+                <section class="address-section">
+                    <h2>Endereço</h2>
+
+                    <div class="form-group">
+                        <label for="cep">CEP</label>
+                        <div class="cep-container">
+                            <input type="text" id="cep" placeholder="Digite o CEP">
+                            <button type="button" class="cep-button">Buscar</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="street">Rua</label>
+                        <input type="text" id="street" placeholder="Nome da Rua">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="number">Número</label>
+                        <input type="text" id="number" placeholder="Número">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="complement">Complemento</label>
+                        <input type="text" id="complement" placeholder="Apto, sala, etc.">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="neighborhood">Bairro</label>
+                        <input type="text" id="neighborhood" placeholder="Bairro">
+                    </div>
+
+                    <div class="form-group-half">
+                        <label for="city">Cidade</label>
+                        <input type="text" id="city" placeholder="Cidade">
+                    </div>
+
+                    <div class="form-group-half">
+                        <label for="state">Estado</label>
+                        <select id="state">
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </div>
+                </section>
+
+                <button type="button" class="btn purple">Alterar senha</button>
+
+                <div class="form-actions">
+                    <button type="reset" class="btn">Cancelar</button>
+                    <button type="submit" class="btn primary">Salvar alterações</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
