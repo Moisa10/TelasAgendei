@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Disponibilidade</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/img/AgendeiHorizontal.png" alt="Agendei" class="logo-img">
+        </div>
+        <nav class="icons">
+            <span class="icon">&#128100;</span>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="availability-header">
+            <h2>Atualizar Disponibilidade</h2>
+            <p>Defina seus horários de trabalho para cada dia da semana</p>
+        </section>
+
+        <section class="availability">
+            <div class="day">
+                <h3><span class="day-icon">S</span> Segunda-feira</h3>
+                <div class="time-select">
+                    <label>Início</label>
+                    <input type="time" value="09:00">
+                    <label>Fim</label>
+                    <input type="time" value="18:00">
+                </div>
+                <input type="checkbox" class="toggle-switch" checked>
+            </div>
+
+            <!-- Replique para os outros dias da semana -->
+            <div class="day">
+                <h3><span class="day-icon">T</span> Terça-feira</h3>
+                <div class="time-select">
+                    <label>Início</label>
+                    <input type="time" value="09:00">
+                    <label>Fim</label>
+                    <input type="time" value="18:00">
+                </div>
+                <input type="checkbox" class="toggle-switch" checked>
+            </div>
+
+            <div class="day">
+                <h3><span class="day-icon">Q</span> Quarta-feira</h3>
+                <div class="time-select">
+                    <label>Início</label>
+                    <input type="time" value="09:00">
+                    <label>Fim</label>
+                    <input type="time" value="18:00">
+                </div>
+                <input type="checkbox" class="toggle-switch" checked>
+            </div>
+
+            <div class="day">
+                <h3><span class="day-icon">Q</span> Quinta-feira</h3>
+                <div class="time-select">
+                    <label>Início</label>
+                    <input type="time" value="09:00">
+                    <label>Fim</label>
+                    <input type="time" value="18:00">
+                </div>
+                <input type="checkbox" class="toggle-switch" checked>
+            </div>
+
+            <div class="day">
+                <h3><span class="day-icon">S</span> Sexta-feira</h3>
+                <div class="time-select">
+                    <label>Início</label>
+                    <input type="time" value="09:00">
+                    <label>Fim</label>
+                    <input type="time" value="18:00">
+                </div>
+                <input type="checkbox" class="toggle-switch">
+            </div>
+
+            <div class="day">
+                <h3><span class="day-icon">S</span> Sábado</h3>
+                <div class="time-select">
+                    <label>Início</label>
+                    <input type="time" value="09:00">
+                    <label>Fim</label>
+                    <input type="time" value="18:00">
+                </div>
+                <input type="checkbox" class="toggle-switch">
+            </div>
+
+            <div class="day">
+                <h3><span class="day-icon">D</span> Domingo</h3>
+                <div class="time-select">
+                    <label>Início</label>
+                    <input type="time" value="09:00">
+                    <label>Fim</label>
+                    <input type="time" value="18:00">
+                </div>
+                <input type="checkbox" class="toggle-switch">
+            </div>
+        </section>
+        <button type="button" class="btn purple">Atualizar</button>
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
