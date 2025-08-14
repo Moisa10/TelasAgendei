@@ -83,10 +83,11 @@ select {
     font-weight: bold;
     width: 100%;
     margin-top: 10px;
+    text-decoration: none;
 }
 
 .purple {
-    background-color: #7c4eff;
+    background-color: #f62b2b;
     color: white;
 }
 
@@ -102,7 +103,7 @@ select {
     color: white;
 }
 
-button:hover {
+a:hover {
     opacity: 0.9;
 }
 
