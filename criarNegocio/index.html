@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Seu Negócio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/img/AgendeiHorizontal.png" alt="Agendei" class="logo-img">
+        </div>
+        <nav class="icons">
+            <span class="icon">&#128100;</span>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <div class="intro-icon">&#x1F488;</div>
+            <h2>Criar Seu Negócio</h2>
+            <p>Vamos configurar seu negócio no Agendei. Preencha as informações abaixo para começar a receber clientes.</p>
+        </section>
+
+        <section class="form-section">
+            <form>
+                <fieldset>
+                    <legend>Informações do Negócio</legend>
+                    <p>Conte-nos sobre seu negócio</p>
+                    <div class="form-group">
+                        <label for="business-name">Nome do Negócio <span class="vermelho">*</span></label>
+                        <input type="text" id="business-name" placeholder="Nome do Negócio" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <p>Onde seus clientes podem encontrar você</p>
+                    <div class="form-group">
+                        <label for="cep">CEP <span class="vermelho">*</span></label>
+                        <input type="text" id="cep" placeholder="Digite o CEP para buscar automaticamente" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="street">Nome da Rua <span class="vermelho">*</span></label>
+                        <input type="text" id="street" placeholder="Nome da Rua" required>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn primary">Criar Negócio</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

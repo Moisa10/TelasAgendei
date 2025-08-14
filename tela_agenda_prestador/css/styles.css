@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #7c4eff;
+    --secondary-color: #ff4c4c;
+    --background-color: #f4f3fb;
+    --text-color: #333;
+    --card-background: linear-gradient(to bottom, #fff, #f9f9f9);
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,6 +32,7 @@ body {
     box-sizing: border-box;
     margin-bottom: 20px;
 }
+
 
 .actions {
     display: flex;
@@ -110,6 +119,40 @@ button.date.selected {
 .appointment:last-child {
     border-bottom: none;
 }
+
+.acoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+}
+
+button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.reservar {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.cancelar {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
 
 @media (max-width: 768px) {
     .calendar {
