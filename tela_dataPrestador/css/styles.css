@@ -67,7 +67,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
 .day:hover {
@@ -91,7 +91,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 input[type="time"] {
