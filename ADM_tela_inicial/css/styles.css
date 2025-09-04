@@ -1,0 +1,142 @@
+:root{
+  --sidebar-bg:#2f2a8f;
+  --sidebar-bg-darker:#26227a;
+  --primary:#7c4eff;
+  --surface:#ffffff;
+  --bg:#f5f6f8;
+  --text:#222;
+  --muted:#6b7280;
+  --shadow:0 8px 24px rgba(0,0,0,.06);
+  --radius:12px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  display:flex;
+  min-height:100vh;
+}
+
+/* Sidebar */
+.sidebar{
+  width:280px;
+  background:var(--sidebar-bg);
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  padding:16px;
+  position:sticky;
+  top:0;
+  height:100vh;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:12px;
+}
+.brand-id{display:flex; align-items:center; gap:10px}
+.logo{
+  width:36px;height:36px;border-radius:10px;
+  background:#fff1; display:grid;place-items:center;
+  font-weight:700;
+}
+.brand-title{font-weight:700}
+
+.menu{display:flex; flex-direction:column; margin-top:10px; gap:6px}
+.menu-item{
+  display:flex; align-items:center; gap:12px; padding:12px 10px; border-radius:10px;
+  color:#e9e9ff; text-decoration:none; transition:.2s background;
+}
+.menu-item .ico{width:22px; text-align:center}
+.menu-item:hover{background:var(--sidebar-bg-darker)}
+.menu-item.active{background:#fff2; color:#fff}
+
+.sidebar-footer{margin-top:auto}
+.user{display:flex; align-items:center; gap:10px; padding:12px 10px}
+.avatar{
+  width:38px;height:38px;border-radius:50%; background:#fff2; display:grid; place-items:center; font-weight:700; color:#fff;
+}
+.meta small{color:#d6d6ff}
+.btn-logout{
+  display:flex; align-items:center; gap:8px; justify-content:center;
+  background:#fff2; color:#fff; text-decoration:none; padding:12px; border-radius:10px; margin-top:8px;
+}
+
+/* Content */
+.content{flex:1; display:flex; flex-direction:column; min-width:0}
+.topbar{
+  display:flex; align-items:center; gap:10px;
+  padding:18px 24px; background:var(--surface); box-shadow:var(--shadow); position:sticky; top:0; z-index:5;
+}
+.topbar h1{margin:0; font-size:1.6rem}
+
+.btn-icon{
+  border:none; background:#eef0ff; color:#363aa6; padding:8px 10px; border-radius:8px; cursor:pointer;
+}
+.btn-open{display:none}
+
+.main{padding:24px; display:flex; flex-direction:column; gap:22px}
+
+/* KPIs */
+.kpis{
+  display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:16px;
+}
+.kpi{
+  background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow);
+  padding:16px;
+}
+.kpi-head{display:flex; align-items:center; justify-content:space-between; color:var(--muted); font-size:.95rem}
+.kpi-ico{width:34px;height:34px; display:grid; place-items:center; border-radius:10px; background:#eef2ff}
+.kpi-ico-users{background:#e9f1ff}
+.kpi-ico-bag{background:#e9ffe9}
+.kpi-ico-clip{background:#eaf1ff}
+.kpi-ico-calendar{background:#f2e9ff}
+.kpi-value{margin-top:8px; font-size:1.7rem; font-weight:800}
+
+/* Providers card */
+.card{
+  background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow); padding:18px;
+}
+.card h2{margin:0 0 14px 0}
+.provider-list{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px}
+.provider-item{
+  display:flex; align-items:center; justify-content:space-between; padding:10px 6px; border-radius:10px;
+}
+.provider-item .left{display:flex; align-items:center; gap:12px}
+.provider-item .info small{color:var(--muted)}
+.provider-item .right{text-align:right}
+.provider-item .right small{color:var(--muted)}
+
+.soft-blue{background:#e8f0ff; color:#3b5bfd}
+.soft-green{background:#eaf9ef; color:#20a464}
+.soft-purple{background:#f0e9ff; color:#6a42d9}
+.soft-yellow{background:#fff5de; color:#a07400}
+
+/* Collapsed (desktop) */
+body.collapsed .sidebar{width:84px}
+body.collapsed .brand-title,
+body.collapsed .menu-item .label,
+body.collapsed .meta,
+body.collapsed .btn-logout .label{display:none}
+body.collapsed .user{justify-content:center}
+
+/* Mobile */
+@media (max-width: 1024px){
+  .kpis{grid-template-columns: repeat(2, minmax(0,1fr))}
+}
+@media (max-width: 720px){
+  .sidebar{
+    position:fixed; left:0; top:0; bottom:0;
+    transform:translateX(-100%); transition:.25s transform; z-index:20;
+  }
+  .sidebar.open{transform:translateX(0)}
+  .btn-open{display:inline-block}
+  .btn-collapse{display:none}
+  .topbar{position:sticky}
+  .main{padding:16px}
+  .kpis{grid-template-columns:1fr}
+}

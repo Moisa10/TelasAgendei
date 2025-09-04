@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel Administrativo • Prestadores</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <aside class="sidebar" aria-label="Menu lateral">
+    <div class="brand">
+      <div class="brand-id">
+        <div class="logo">A</div>
+        <span class="brand-title">Admin Panel</span>
+      </div>
+      <button class="btn-icon btn-collapse" aria-label="Colapsar menu" title="Colapsar menu">«</button>
+    </div>
+
+    <nav class="menu" aria-label="Navegação">
+      <a href="#" class="menu-item">
+        <span class="ico">🏠</span><span class="label">Dashboard</span>
+      </a>
+      <a href="#" class="menu-item">
+        <span class="ico">👥</span><span class="label">Clientes</span>
+      </a>
+      <a href="#" class="menu-item active">
+        <span class="ico">💼</span><span class="label">Prestadores</span>
+      </a>
+      <a href="#" class="menu-item">
+        <span class="ico">🧾</span><span class="label">Serviços</span>
+      </a>
+      <a href="#" class="menu-item">
+        <span class="ico">⚙️</span><span class="label">Configurações</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user">
+        <div class="avatar">A</div>
+        <div class="meta">
+          <strong>Admin</strong>
+          <small>admin@sistema.com</small>
+        </div>
+      </div>
+      <a href="#" class="btn-logout"><span class="ico">↪</span> <span class="label">Sair</span></a>
+    </div>
+  </aside>
+
+  <div class="content">
+    <header class="topbar">
+      <div class="left">
+        <button class="btn-icon btn-open" aria-label="Abrir menu" title="Abrir menu">☰</button>
+        <h1>Painel Administrativo</h1>
+      </div>
+      <div class="right">
+        <span class="admin-name">Admin</span>
+        <div class="avatar small">A</div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="card" aria-labelledby="ttl-prestador">
+        <div class="card-head">
+          <h2 id="ttl-prestador">Gerenciar Prestador</h2>
+          <span class="muted">ID: #78945</span>
+        </div>
+
+        <form class="form" autocomplete="off" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Nome completo" value="Maria Oliveira"/>
+            </div>
+
+            <div class="field">
+              <label for="rua">Rua</label>
+              <input type="text" id="rua" placeholder="Rua das Flores" value="Rua das Flores"/>
+            </div>
+
+            <div class="field">
+              <label for="cep">CEP</label>
+              <div class="input-group">
+                <input type="text" id="cep" placeholder="00000-000" value="22000-000"/>
+                <button class="btn purple" type="button" aria-label="Buscar CEP">🔎</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="complemento">Complemento</label>
+              <input type="text" id="complemento" placeholder="Sala / Apto" value="Sala 45"/>
+            </div>
+
+            <div class="field">
+              <label for="numero">Número</label>
+              <input type="text" id="numero" placeholder="Número" value="123"/>
+            </div>
+
+            <div class="field">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" placeholder="Cidade" value="Rio de Janeiro"/>
+            </div>
+
+            <div class="field">
+              <label for="bairro">Bairro</label>
+              <input type="text" id="bairro" placeholder="Bairro" value="Jardim Primavera"/>
+            </div>
+
+            <div class="field">
+              <label for="estado">Estado</label>
+              <select id="estado">
+                <option>Rio de Janeiro</option>
+                <option>Acre</option><option>Alagoas</option><option>Amapá</option>
+                <option>Amazonas</option><option>Bahia</option><option>Ceará</option>
+                <option>Distrito Federal</option><option>Espírito Santo</option><option>Goiás</option>
+                <option>Maranhão</option><option>Mato Grosso</option><option>Mato Grosso do Sul</option>
+                <option>Minas Gerais</option><option>Pará</option><option>Paraíba</option>
+                <option>Paraná</option><option>Pernambuco</option><option>Piauí</option>
+                <option>Rio Grande do Norte</option><option>Rio Grande do Sul</option><option>Rondônia</option>
+                <option>Roraima</option><option>Santa Catarina</option><option>São Paulo</option>
+                <option>Sergipe</option><option>Tocantins</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="telefone">Número de Telefone</label>
+              <input type="tel" id="telefone" placeholder="(00) 00000-0000" value="(21) 98765-4321"/>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="email@exemplo.com" value="maria.oliveira@email.com"/>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn ghost">Cancelar</button>
+            <button type="submit" class="btn primary">Salvar Alterações</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

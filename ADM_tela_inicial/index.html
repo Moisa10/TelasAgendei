@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin • Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <aside class="sidebar" aria-label="Menu lateral">
+    <div class="brand">
+      <button class="btn-icon btn-collapse" aria-label="Alternar menu" title="Alternar menu">«</button>
+      <div class="brand-id">
+        <div class="logo">A</div>
+        <span class="brand-title">Admin Panel</span>
+      </div>
+    </div>
+
+    <nav class="menu" aria-label="Navegação">
+      <a href="#" class="menu-item active">
+        <span class="ico">🏠</span><span class="label">Dashboard</span>
+      </a>
+      <a href="#" class="menu-item">
+        <span class="ico">👥</span><span class="label">Clientes</span>
+      </a>
+      <a href="#" class="menu-item">
+        <span class="ico">💼</span><span class="label">Prestadores</span>
+      </a>
+      <a href="#" class="menu-item">
+        <span class="ico">🧾</span><span class="label">Serviços</span>
+      </a>
+      <a href="#" class="menu-item">
+        <span class="ico">⚙️</span><span class="label">Configurações</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user">
+        <div class="avatar">A</div>
+        <div class="meta">
+          <strong>Admin</strong>
+          <small>admin@sistema.com</small>
+        </div>
+      </div>
+      <a href="#" class="btn-logout"><span class="ico">↪</span> <span class="label">Sair</span></a>
+    </div>
+  </aside>
+
+  <div class="content">
+    <header class="topbar">
+      <button class="btn-icon btn-open" aria-label="Abrir menu" title="Abrir menu">☰</button>
+      <h1>Dashboard</h1>
+    </header>
+
+    <main class="main">
+      <section class="kpis" aria-label="Indicadores">
+        <article class="kpi">
+          <div class="kpi-head">
+            <span class="kpi-title">Total de Clientes</span>
+            <span class="kpi-ico kpi-ico-users">👤</span>
+          </div>
+          <div class="kpi-value">248</div>
+        </article>
+
+        <article class="kpi">
+          <div class="kpi-head">
+            <span class="kpi-title">Total de Prestadores</span>
+            <span class="kpi-ico kpi-ico-bag">👜</span>
+          </div>
+          <div class="kpi-value">36</div>
+        </article>
+
+        <article class="kpi">
+          <div class="kpi-head">
+            <span class="kpi-title">Serviços Ativos</span>
+            <span class="kpi-ico kpi-ico-clip">🗂️</span>
+          </div>
+          <div class="kpi-value">92</div>
+        </article>
+
+        <article class="kpi">
+          <div class="kpi-head">
+            <span class="kpi-title">Agendamentos</span>
+            <span class="kpi-ico kpi-ico-calendar">📅</span>
+          </div>
+          <div class="kpi-value">1,254</div>
+        </article>
+      </section>
+
+      <section class="card providers" aria-labelledby="ttl-providers">
+        <h2 id="ttl-providers">Prestadores Mais Ativos</h2>
+        <ul class="provider-list">
+          <li class="provider-item">
+            <div class="left">
+              <div class="avatar soft-blue">RP</div>
+              <div class="info">
+                <strong>Ricardo Pereira</strong>
+                <small>Barbeiro</small>
+              </div>
+            </div>
+            <div class="right">
+              <strong>87</strong>
+              <small>Agendamentos</small>
+            </div>
+          </li>
+          <li class="provider-item">
+            <div class="left">
+              <div class="avatar soft-green">MS</div>
+              <div class="info">
+                <strong>Marcos Santos</strong>
+                <small>Cabeleireiro</small>
+              </div>
+            </div>
+            <div class="right">
+              <strong>65</strong>
+              <small>Agendamentos</small>
+            </div>
+          </li>
+          <li class="provider-item">
+            <div class="left">
+              <div class="avatar soft-purple">JC</div>
+              <div class="info">
+                <strong>Julia Costa</strong>
+                <small>Manicure</small>
+              </div>
+            </div>
+            <div class="right">
+              <strong>52</strong>
+              <small>Agendamentos</small>
+            </div>
+          </li>
+          <li class="provider-item">
+            <div class="left">
+              <div class="avatar soft-yellow">AF</div>
+              <div class="info">
+                <strong>André Ferreira</strong>
+                <small>Barbeiro</small>
+              </div>
+            </div>
+            <div class="right">
+              <strong>48</strong>
+              <small>Agendamentos</small>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendei • Home</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Agendei - Início">
+        <img src="/img/AgendeiHorizontal.png" alt="Logo agendei" width="200px">
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">☰</button>
+
+      <nav id="nav" class="nav" aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="active">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li class="sep" aria-hidden="true"></li>
+          <li><a href="#entrar" class="link">Entrar</a></li>
+          <li><a href="#cadastrar" class="btn primary">Cadastrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="ttl-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="ttl-hero">
+            Simplifique seus <span>Agendamentos</span>
+          </h1>
+          <p>
+            Conecte clientes e prestadores de serviço de forma rápida, fácil e segura.
+            O futuro dos agendamentos está aqui.
+          </p>
+          <div class="hero-ctas">
+            <a href="#cadastrar" class="btn cta">Começar Agora</a>
+            <a href="#sobre" class="btn ghost">Saiba Mais</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Próximo agendamento">
+          <div class="hc-head">
+            <!-- <div class="hc-ico" aria-hidden="true">📆</div> -->
+             <img src="/img/logoAgendei.jpg" alt="" width="50px">
+            <div>
+              <strong>Próximo Agendamento</strong>
+              <small>Hoje, 14:30</small>
+            </div>
+          </div>
+
+          <div class="hc-box">
+            <div class="hc-title">
+              <strong>Corte + Barba</strong>
+              <small>Barbearia do João</small>
+            </div>
+            <div class="hc-foot">
+              <span class="price">R$ 40,00</span>
+              <small>45 min</small>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <span class="bg-orb orb-1" aria-hidden="true"></span>
+      <span class="bg-orb orb-2" aria-hidden="true"></span>
+    </section>
+
+    <!-- Nossa História -->
+    <section id="sobre" class="about" aria-labelledby="ttl-sobre">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="ttl-sobre">Nossa História</h2>
+          <p>Nascemos da necessidade de simplificar a vida de quem oferece e de quem busca serviços</p>
+        </header>
+
+        <div class="cards-2">
+          <article class="card-info">
+            <div class="icon soft-purple" aria-hidden="true">💡</div>
+            <div>
+              <h3>A Ideia</h3>
+              <p>
+                Em 2023, percebemos que tanto clientes quanto prestadores de serviço enfrentavam dificuldades
+                para se conectar de forma eficiente: ligações perdidas, horários desencontrados e falta de
+                organização eram problemas constantes.
+              </p>
+            </div>
+          </article>
+
+          <article class="card-info">
+            <div class="icon soft-orange" aria-hidden="true">⚡</div>
+            <div>
+              <h3>A Solução</h3>
+              <p>
+                Criamos uma plataforma que conecta pessoas de forma inteligente, permitindo agendamentos rápidos,
+                gestão eficiente de horários e uma experiência simples e moderna. Hoje, milhares confiam no Agendei.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por que usar o Agendei? -->
+    <section class="features" aria-labelledby="ttl-beneficios">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="ttl-beneficios">Por que usar o Agendei?</h2>
+          <p>Descubra como nossa plataforma pode transformar a forma como você agenda e oferece serviços</p>
+        </header>
+
+        <div class="cards-3">
+          <article class="feature">
+            <div class="icon soft-purple" aria-hidden="true">⏱️</div>
+            <h3>Agendamento Rápido</h3>
+            <p>Agende seus serviços em poucos cliques. Veja horários disponíveis em tempo real e confirme instantaneamente.</p>
+          </article>
+
+          <article class="feature">
+            <div class="icon soft-orange" aria-hidden="true">📍</div>
+            <h3>Localização Inteligente</h3>
+            <p>Encontre prestadores próximos a você. Nossa tecnologia mostra distância e tempo de deslocamento.</p>
+          </article>
+
+          <article class="feature">
+            <div class="icon soft-green" aria-hidden="true">🔔</div>
+            <h3>Notificação</h3>
+            <p>Receba lembretes automáticos sobre seus agendamentos. Nunca mais perca um compromisso.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Âncoras de destino dos botões -->
+    <section id="entrar" class="anchor-dummy" aria-hidden="true"></section>
+    <section id="cadastrar" class="anchor-dummy" aria-hidden="true"></section>
+  </main>
+
+  <footer class="site-footer dark">
+    <div class="container footer-grid">
+        <div class="col brand-col">
+        <div class="footer-brand">
+            <!-- <div class="logo" aria-hidden="true">📅</div> -->
+            <img src="/img/LogoVertical.png" alt="" width="70px">
+        </div>
+        <p class="foot-desc">
+            Conectando pessoas e simplificando agendamentos em todo o Brasil.
+        </p>
+
+        <ul class="social">
+            <li><a class="ig" href="#" aria-label="Instagram">📸</a></li>
+        </ul>
+        </div>
+
+        <nav class="col links-col" aria-label="Links Rápidos">
+        <h4>Links Rápidos</h4>
+        <ul>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#como-funciona">Como Funciona</a></li>
+            <li><a href="#precos">Preços</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+        </nav>
+
+        <nav class="col support-col" aria-label="Suporte">
+        <h4>Suporte</h4>
+        <ul>
+            <li><a href="#ajuda">Central de Ajuda</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#termos">Termos de Uso</a></li>
+            <li><a href="#privacidade">Privacidade</a></li>
+        </ul>
+        </nav>
+
+        <!-- aside com animação de flutuar -->
+        <aside class="col app-col" aria-label="Baixe o App">
+        <h4>Baixe o App</h4>
+
+        <a href="#" class="store appstore" aria-label="App Store">
+            <span class="store-ico" aria-hidden="true"></span>
+            <span class="store-txt">
+            <small>Baixar na</small>
+            App Store
+            </span>
+        </a>
+
+        <a href="#" class="store gplay" aria-label="Google Play">
+            <span class="store-ico" aria-hidden="true">▶</span>
+            <span class="store-txt">
+            <small>Disponível no</small>
+            Google Play
+            </span>
+        </a>
+        </aside>
+    </div>
+
+    <div class="container foot-bottom">
+        <small>© <span id="year"></span> Agendei. Todos os direitos reservados. Feito com <span class="heart">❤</span> no Brasil.</small>
+    </div>
+    </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
