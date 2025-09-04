@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Minha Agenda</title>
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Flatpickr (Calendário) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/themes/airbnb.css">
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="css/styles.css"/>
 </head>
-<body>
+    <body>
     <header class="header">
         <h1>Minha Agenda</h1>
     </header>
 
-    <main>
-        <section class="calendar">
-            <h2>Maio 2025</h2>
-            <div class="calendar-grid">
-                <div class="days">
-                    <span>D</span><span>S</span><span>T</span>
-                    <span>Q</span><span>Q</span><span>S</span><span>S</span>
-                </div>
-                <div class="dates" id="dates">
-                    <!-- Datas geradas dinamicamente pelo JavaScript -->
-                </div>
-            </div>
+    <main class="page">
+        <section class="card calendar-card" aria-label="Seleção de data">
+        <h2 class="card-title">Selecione uma data</h2>
+        <input id="calendar" type="text" aria-label="Calendário" />
         </section>
 
-        <section class="agenda-details" id="agenda-details">
-            <h3 id="selected-date">Selecione uma data</h3>
-            <p id="appointment-count">0 agendamentos</p>
-            <div id="appointments">
-                <!-- Lista de agendamentos será exibida aqui -->
-            </div>
-        </section>
-        <div class="acoes">
-            <button class="reservar">Atualizar</button>
-            <button class="cancelar">Cancelar</button>
+        <section class="card agenda-card" aria-labelledby="ttl-agenda">
+        <div class="agenda-head">
+            <h3 id="ttl-agenda" class="agenda-title">Selecione uma data</h3>
+            <span id="appointment-count" class="muted">0 agendamentos</span>
         </div>
+        <div id="appointments" class="appointment-list" aria-live="polite">
+            <!-- linhas renderizadas via JS -->
+        </div>
+        </section>
     </main>
 
+    <!-- Flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/l10n/pt.js"></script>
+
+    <!-- App -->
     <script src="js/scripts.js"></script>
-</body>
+    </body>
 </html>

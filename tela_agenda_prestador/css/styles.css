@@ -1,165 +1,146 @@
-:root {
-    --primary-color: #7c4eff;
-    --secondary-color: #ff4c4c;
-    --background-color: #f4f3fb;
-    --text-color: #333;
-    --card-background: linear-gradient(to bottom, #fff, #f9f9f9);
+:root{
+  --primary-color:#7c4eff;
+  --primary-2:#5b39c2;
+  --danger:#ff4c4c;
+  --bg:#f4f4f9;
+  --text:#222;
+  --muted:#6b7280;
+  --surface:#fff;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(16,24,40,.08);
 }
 
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    min-height: 100vh;
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
 }
 
-.header {
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #7c4eff, #5b39c2);
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
+/* Header */
+.header{
+  width:min(100%, 860px);
+  margin:24px auto 18px;
+  background:linear-gradient(135deg, var(--primary-color), var(--primary-2));
+  color:#fff;
+  border-radius:16px;
+  padding:18px 20px;
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+.header h1{margin:0; font-size:1.6rem; letter-spacing:.2px}
+
+/* Página */
+.page{
+  width:min(100%, 860px);
+  margin-inline:auto;
+  padding:0 16px 40px;
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:18px;
 }
 
-
-.actions {
-    display: flex;
-    gap: 10px;
+/* Card base */
+.card{
+  background:var(--surface);
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  padding:18px;
 }
 
-.search-icon,
-.add-icon {
-    font-size: 1.5rem;
-    cursor: pointer;
+/* Títulos de card */
+.card-title{
+  margin:0 0 10px 2px;
+  font-size:1.05rem;
+  color:#111827;
 }
 
-.calendar {
-    background-color: white;
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    box-sizing: border-box;
+/* Calendário (Flatpickr) */
+.calendar-card{padding:14px 14px 6px}
+#calendar{
+  width:100%;
+  border:none;
+  outline:none;
 }
 
-.calendar h2 {
-    text-align: center;
-    margin: 0 0 20px 0;
+/* Ajustes no flatpickr */
+.flatpickr-calendar.inline{
+  width:100%;
+  box-shadow:none;
+  border:none;
+  font-size:16px;
+}
+.flatpickr-months{display:flex; justify-content:center; margin-bottom:4px}
+.flatpickr-current-month{
+  font-weight:800 !important;
+}
+.flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange{
+  background:var(--primary-color);
+  border-color:var(--primary-color);
+  color:#fff;
+}
+.flatpickr-day:hover{
+  background:#f1ecff;
+  border-color:#f1ecff;
 }
 
-.calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
-    text-align: center;
+/* Agenda */
+.agenda-card{padding:16px}
+.agenda-head{
+  display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:8px;
+}
+.agenda-title{margin:0; font-size:1.05rem}
+.muted{color:var(--muted); font-size:.95rem}
+
+.appointment-list{
+  display:flex; flex-direction:column; gap:10px; margin-top:10px;
 }
 
-.days {
-    display: contents;
+/* Linha de agendamento */
+.appointment{
+  display:grid;
+  grid-template-columns: 1fr auto;
+  gap:8px 12px;
+  align-items:center;
+  padding:14px;
+  border:1px solid #eef0f5;
+  border-radius:12px;
+  background:#fff;
+}
+.app-left{display:flex; flex-direction:column}
+.app-name{margin:0; font-weight:800}
+.app-service{margin:2px 0 0; color:var(--muted); font-size:.95rem}
+.app-right{display:flex; flex-direction:column; align-items:flex-end; gap:8px}
+.app-time{font-weight:700; color:#111827}
+
+/* Ações por cliente */
+.actions{
+  display:flex; gap:8px;
+}
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  height:36px; padding:0 14px; border:none; border-radius:8px; cursor:pointer; font-weight:700;
+  transition:.2s transform, .2s filter;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn-primary{background:var(--primary-color); color:#fff}
+.btn-danger{background:var(--danger); color:#fff}
+.btn-outline{
+  background:#fff; color:#111; border:1px solid #e5e7eb;
 }
 
-.dates {
-    display: contents;
+/* Responsivo */
+@media (min-width: 920px){
+  .page{
+    grid-template-columns: 1fr 1fr;
+    align-items:start;
+  }
+  .calendar-card{position:sticky; top:16px}
 }
 
-button.date {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-}
-
-button.date:hover {
-    background-color: #eee;
-}
-
-button.date.selected {
-    background-color: #7c4eff;
-    color: white;
-}
-
-.agenda-details {
-    width: 100%;
-    max-width: 600px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    min-height: 100px;
-}
-
-#appointments {
-    margin-top: 20px;
-}
-
-.appointment {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-}
-
-.appointment:last-child {
-    border-bottom: none;
-}
-
-.acoes {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px 20px;
-}
-
-button {
-    flex: 1;
-    margin: 5px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    margin-top: 15px;
-}
-
-.reservar {
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-.cancelar {
-    background-color: var(--secondary-color);
-    color: #fff;
-}
-
-button:hover {
-    opacity: 0.9;
-}
-
-
-@media (max-width: 768px) {
-    .calendar {
-        padding: 10px;
-    }
-
-    .agenda-details {
-        padding: 10px;
-    }
+@media (max-width: 520px){
+  .appointment{grid-template-columns: 1fr}
+  .app-right{align-items:flex-start}
 }

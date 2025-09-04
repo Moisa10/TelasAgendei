@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f22a3e61-665d-4e7f-9b58-99d88040db41" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/tela_agenda_prestador/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/tela_agenda_prestador/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tela_agenda_prestador/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tela_agenda_prestador/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tela_agenda_prestador/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/tela_agenda_prestador/js/scripts.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="32DJ1W5mfWyyEcTyYJ25ekT7n41" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f22a3e61-665d-4e7f-9b58-99d88040db41" name="Changes" comment="" />
+      <created>1756948995265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756948995265</updated>
+    </task>
+    <servers />
+  </component>
+</project>
